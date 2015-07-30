@@ -9,13 +9,11 @@ import java.io.IOException;
 public class JsonParsing {
     public static void jsonParser (String pathToFile) throws JSONException, IOException {
 
-        String [] parsedText = new String[7]; //array for json item
-
-        JSONObject obj= new JSONObject(JsonReaderr.reader(pathToFile)); //read .json
+        JSONObject obj= new JSONObject(JsonReaderr.reader(pathToFile)); //read .json to Strings
         JSONArray arr = obj.getJSONObject("orderInfo").getJSONArray("items");
 
         for(int i =0; i<arr.length(); i++ ){
-
+            String [] parsedText = new String[7]; //array for json item
             int itemId = arr.getJSONObject(i).getInt ("itemId");
             String title = arr.getJSONObject(i).getString("title");
             String authorName = arr.getJSONObject(i).getString("authorName");
@@ -32,7 +30,7 @@ public class JsonParsing {
             parsedText[5]= customerName;
             parsedText[6]= customerPhone;
 
-            ArrayConstructor.arrayListConstructor(parsedText);
+            ArrayConstructor.arrayListConstructor(parsedText); //add items array to ArrayList
         }
     }
 }

@@ -10,7 +10,6 @@ public class Main {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-            ArrayConstructor.getConstructed(0); // 0,1,2 returns the same result!
-
+            ArrayConstructor.getConstructed(1); // 0,1,2 returns the same result!
     }
 }
