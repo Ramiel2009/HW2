@@ -11,7 +11,7 @@ public class JsonParsing {
 
         String [] parsedText = new String[7]; //array for json item
 
-        JSONObject obj= new JSONObject(JsonGetter.reader(pathToFile)); //read .json
+        JSONObject obj= new JSONObject(JsonReaderr.reader(pathToFile)); //read .json
         JSONArray arr = obj.getJSONObject("orderInfo").getJSONArray("items");
 
         for(int i =0; i<arr.length(); i++ ){

@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class JsonGetter {
+public class JsonReaderr {
     public static String reader(String pathToFile) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(pathToFile));
         StringBuilder sb = new StringBuilder();
