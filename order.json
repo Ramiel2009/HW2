@@ -1,0 +1,33 @@
+{"orderInfo":{
+	"orderType":"default",
+	"orderId":290715002,
+	"items": [
+		{
+			"itemId": 015487,
+			"title": "Lord Of The Rings",
+			"authorName" : "J. R. R. Tolkien",
+			"releaseYear": 1954,
+			"orderDate": "01/10/2015",
+			"customerName": "Mr. Anderson",
+			"customerPhone": "+380209999999"
+			},
+		{ 
+			"itemId": 015648,
+			"title": "Harry Potter and the sorcerer's stone ",
+			"authorName" : "J. K. Rowling",
+			"releaseYear": 1997,
+			"orderDate": "01/10/2015",
+			"customerName": "Mr. Anderson",
+			"customerPhone": "+380209999999"},
+	   {
+			"itemId": 015777,
+			"title": "Amber Chronicles",
+			"authorName": "Roger Zelazny",
+			"releaseYear": 1970,
+			"orderDate": "01/10/2015",
+			"customerName": "Mr. Anderson",
+			"customerPhone": "+380209999999"
+			}
+		]
+	}	
+}
