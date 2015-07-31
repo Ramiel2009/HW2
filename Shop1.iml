@@ -8,5 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="org.json:org.json:2.0" level="project" />
+    <orderEntry type="library" name="com.mysql.jdbc:com.springsource.com.mysql.jdbc:5.1.6" level="project" />
+    <orderEntry type="library" name="org.postgresql:postgresql:9.2-1002-jdbc4" level="project" />
   </component>
 </module>

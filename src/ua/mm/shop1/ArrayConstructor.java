@@ -15,4 +15,8 @@ public class ArrayConstructor {
         System.out.println(Arrays.toString(constructed.get(i)));
         return constructed.get(i);
     }
+
+    public static ArrayList<String[]> getConstructed() {
+        return constructed;
+    }
 }
