@@ -7,10 +7,10 @@ public class GettingTransactionStatus {
     private Operation operation = null;
     public GettingTransactionStatus(int status){
         if (status == 0){
-            System.out.println("Added to DB");
+            this.operation = new TransactionSucceed();
         }
         else
-            System.out.println("Failed, please try again");
+            this.operation = new TransactionFailed();
     }
     public void gettingTransactionStatus(int status){
         if (operation != null) operation.sendStatus(status);

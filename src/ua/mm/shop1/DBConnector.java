@@ -11,7 +11,6 @@ public class DBConnector {
             Class.forName("org.postgresql.Driver");
             System.out.println("Connection to DB...");
             Connection conn = DriverManager.getConnection(dbUrl, "admin", "admin");
-
             String sqlQueryCreate = "CREATE TABLE IF NOT EXISTS " + "orders " + " (" +
                     "id SERIAL, " +
                     "itemId VARCHAR , title VARCHAR , authorName VARCHAR , "+
@@ -33,10 +32,10 @@ public class DBConnector {
             preparedStatementInsert.setString(7, s[6]);
             preparedStatementInsert.execute();
             conn.close();
+
             transactionStatus = 0;
             GettingTransactionStatus status = new GettingTransactionStatus(transactionStatus);
             status.gettingTransactionStatus(transactionStatus);
-            System.out.println("Inserted");
         }
         catch (ClassNotFoundException e) {
             e.printStackTrace();

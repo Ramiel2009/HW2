@@ -5,6 +5,7 @@ package ua.mm.shop1;
  */
 public class TransactionSucceed extends Operation {
 
+    @Override
     public void sendStatus(int status) {
         System.out.println("Operation Complete!");
 
